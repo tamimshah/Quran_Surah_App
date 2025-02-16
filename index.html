@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran Surah App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Surahs of the Quran</h1>
+        <nav>
+            <ul>
+                <!-- <li><a href="#" onclick="showSection('surah-section')">Surahs</a></li> -->
+                <li><a href="#" onclick="showSection('about-section')">About</a></li>
+                <li><a href="#" onclick="showSection('hadith-section')">Hadith</a></li>
+            </ul>
+        </nav>
+        <div id="surah-section" class="section">
+            <select id="surah-select">
+                <option value="" disabled selected>Select a Surah</option>
+            </select>
+            <div id="surah-content" class="surah-content">
+                <h2 id="surah-name"></h2>
+                <div id="verses-container">
+                    <!-- Verses will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+        <div id="about-section" class="section" style="display: none;">
+            <h2>About</h2>
+            <p>Welcome to the Quran Surah App a beautifully designed platform that allows users to read all 114 Surahs of the Quran in both Arabic and Bangla. This app is created to provide a seamless reading experience, helping users connect with the Quran anytime, anywhere.</p>
+            <p>This app is designed and developed by <b>Md. Tahmid Shah Tamim.</b></p>
+            <p>Contact for any complaints or suggestions: <a href="mailto:tamimhp07@gmail.com">tamimhp07@gmail.com</a></p>
+        </div>
+        <div id="hadith-section" class="section" style="display: none;">
+            <h2>Hadith</h2>
+            <!-- Add content for Hadith section -->
+            <p>Coming soon...</p>
+        </div>
+        <footer>
+            <p>Developed by Md. Tahmid Shah Tamim</p>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
